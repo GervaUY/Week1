@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Week1</string>
+    <string name="hint_nombre">Nombre</string>
+    <string name="hint_teléfono">Teléfono</string>
+    <string name="hint_email">E mail</string>
+    <string name="hint_desc">Descripción del contacto</string>
+    <string name="enviar_fecha">Enviar fecha</string>
+    <string name="BotonSiguiente">Siguiente</string>
+    <string name="BotonEditarDatos">Editar Datos</string>
+</resources>

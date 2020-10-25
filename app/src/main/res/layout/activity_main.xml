@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:ignore="ExtraText">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"/>
+
+        <!--Nombre de contacto-->
+        <EditText
+            android:id="@+id/edtnombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_nombre"
+            android:inputType="text"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_vertical"
+            android:autofillHints=""
+            android:layout_below="@id/toolbar"/>
+
+        <!--Date picker-->
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtnombre"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Fecha de nacimiento" />
+
+        <DatePicker
+            android:id="@+id/datepicker"
+            android:layout_width="256dp"
+            android:layout_height="275dp"
+            android:layout_below="@id/tvDate"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" />
+
+        <Button
+            android:id="@+id/datebutton"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/datepicker"
+            android:text="@string/enviar_fecha"
+            android:layout_centerHorizontal="true"/>
+
+        <!--Datos  y descripción del contacto-->
+        <EditText
+            android:id="@+id/edttelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_teléfono"
+            android:inputType="text"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_below="@id/datebutton"
+            android:autofillHints=""
+            android:layout_margin="5dp"/>
+
+        <EditText
+            android:id="@+id/edtemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_below="@id/edttelefono"
+            android:autofillHints=""
+            android:layout_margin="5dp"/>
+
+        <EditText
+            android:id="@+id/edtdescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_desc"
+            android:inputType="text"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_below="@id/edtemail"
+            android:autofillHints=""
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/BotonSiguiente"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/edtdescripcion"
+            android:onClick="Siguiente"/>
+        <!--asocio método intent al boton-->
+
+
+
+</RelativeLayout>

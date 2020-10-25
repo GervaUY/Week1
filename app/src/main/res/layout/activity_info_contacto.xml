@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:ignore="ExtraText">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <TextView
+        android:id="@+id/tvConfirmarDatos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="5dp" />
+
+    <TextView
+        android:id="@+id/tvNombreContacto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvConfirmarDatos"
+        android:layout_marginTop="46dp"
+        android:layout_marginBottom="5dp" />
+
+    <TextView
+        android:id="@+id/tvFechaNac"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/tvNombreContacto"
+        android:layout_marginTop="23dp"
+        android:layout_marginBottom="5dp" />
+
+    <TextView
+        android:id="@+id/tvTelefonoCont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/tvFechaNac"
+        android:layout_marginTop="23dp"
+        android:layout_marginBottom="5dp" />
+
+    <TextView
+        android:id="@+id/tvEmailCont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTelefonoCont"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="5dp" />
+
+    <TextView
+        android:id="@+id/tvDescripcionCont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvEmailCont"
+        android:layout_marginTop="31dp"
+        android:layout_marginBottom="5dp" />
+
+    <Button
+        android:id="@+id/butEditarDatos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDescripcionCont"
+        android:layout_marginTop="154dp"
+        android:onClick="EditarDatos"
+        android:layout_centerHorizontal="true"
+        android:text="@string/BotonEditarDatos" />
+
+</RelativeLayout>
